@@ -9,3 +9,5 @@ if response.ok:
     tds = soup.findAll('span', class_ = 'mw-headline')
     
     [print(str(td.text) + '\n') for td in tds]
+else:
+    print('Erreur de response : ' + str(response))
