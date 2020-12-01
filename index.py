@@ -2,8 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 
-url = Request('https://www.trenois.com/bosch-06019f200b-meuleuse-a-batterie-gws12v-76-article-fbc0037', headers={'User-Agent': 'Mozilla/5.0'})
+'''
+code = 'fbc038'
+s_url = 'https://www.trenois.com/bosch-06019f200b-meuleuse-a-batterie-gws12v-76-article-'
+c_url = s_url + code
+'''
+
+url = Request('https://www.trenois.com/bosch-06019f200b-meuleuse-a-batterie-gws12v-76-article-fbc0038', headers={'User-Agent': 'Mozilla/5.0'})
 response = urlopen(url).read()
+                    
 
 soup = BeautifulSoup(response, 'html.parser')
 title = soup.find('title')
