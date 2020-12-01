@@ -21,7 +21,7 @@ for i in range(0,90):
     
     if len(title)!=0:  
         #print(title.text + '\n\n' + ref.text[1::] + '\n\n' + des.text + '\n\n' + car.text)
-        curseur.execute("INSER INTO produits(REF, TITLE, DECSRIPTION, CARACTERISTIQUES) VALUES(%s, %s, %s, %s)", (print(ref.text), print(title.text), print(des.text), print(car.text) ))
+        curseur.execute("INSERT INTO produits(REF, TITLE, DESCR, CARACT) VALUES (%s, %s, %s, %s)", (ref.text[1::], title.text, des.text, car.text ))
         bdd.commit()
     else:
         print("Pas de page produit")  
