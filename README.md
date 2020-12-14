@@ -1,3 +1,4 @@
-# tuto-scrapping
+# tuto-scrapping 
+
 Scrapp d'une page de produit 
-Méthode siomple et efficace.
+Méthode simple et efficace.
